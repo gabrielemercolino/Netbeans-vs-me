@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: max(1rem, 10dvw);
+}
+
+main > div {
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+main > div > h2 {
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+main > div > button {
+	font-size: larger;
+	cursor: pointer;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 1rem;
+}
+
+main > div > button:focus-within,
+main > div > button:hover {
+	background-color: lightgray;
+}
+
+.input,
+.output {
+	font-size: larger;
+}
+
+.input {
+	width: max(100%, 10rem);
+}
